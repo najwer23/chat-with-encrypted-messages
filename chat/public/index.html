@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="PL">
+
+<head>
+  <title>Socket.IO chat</title>
+  <meta charset="UTF-8">
+  <meta name="Author" content="Mariusz Najwer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Mariusz Najwer" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+</head>
+
+<body>
+
+
+
+  <ul id="messages"></ul>
+  <form action="">
+    <input id="user" placeholder="name" />
+    <input id="inputMsg" placeholder="msg" autocomplete="off" />
+    <select name="cipher" id="selectEncryption">
+      <option selected="selected">none</option>
+      <option>xor</option>
+      <option>caesar</option>
+    </select>
+    <button>Send</button>
+  </form>
+
+<script type="text/javascript" src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.js"></script>
+<script type="module" src="index.js"></script>
+
+</body>
+
+</html>
